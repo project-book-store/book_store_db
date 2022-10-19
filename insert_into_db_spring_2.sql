@@ -23,3 +23,12 @@ values ('Làm Đĩ', 'BC-001', 'https://salt.tikicdn.com/cache/w1200/ts/product/
 , 'Nhà Xuất Bản Văn Học', 'Phan Thị Thu Huyền', 'Vũ Trọng Phụng', 484, '15.5x24 cm', '2022-09-29', 100, 71000, 7, 1),
 ('PIXI THÔNG THÁI - TRANH', 'BC-001', 'http://static.nhanam.com.vn/thumb/0x230/crop/Books/Images/2022/9/30/OQH2D32P.jpg'
 , 'Nhà Xuất Bản Văn Học', 'Phan Thị Thu Huyền', 'Vũ Trọng Phụng', 484, '15.5x24 cm', '2022-09-29', 100, 71000, 8, 1);
+
+INSERT INTO `app_role` VALUES (1,'ROLE_ADMIN'),(2,'ROLE_USER');
+
+INSERT INTO `app_user` 
+VALUES (1,'2022-09-18','sangnguyenjp97@gmail.com','\0','$2a$10$3Vke14hdeWGh25HEPhpD.uncnmsUmGKstrOueJ98iHLZFfOv0oLnW','admin');
+
+INSERT INTO `user_role` VALUES (1,1,1), (2,2,1);
+
+insert into customer(user_id) values (1);
